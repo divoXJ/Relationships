@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffe9ecf1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFFFF">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:textSize="17sp"
+            android:text="亲戚称呼计算器" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:gravity="right|bottom"
+        android:padding="5dp"
+        android:textColor="#FF000000"
+        android:textSize="30sp"
+        android:text="我" />
+
+    <TextView
+        android:id="@+id/tv_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:gravity="right|center"
+        android:padding="5dp"
+        android:textColor="#FF959595"
+        android:textSize="20sp"
+        tools:text="爸爸/父亲" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#545454"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="男"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/sw_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="女"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_h"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="夫"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_w"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="妻"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_clr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:text="C"
+                android:textColor="#FF0080FF"
+                android:textSize="35sp" />
+
+            <ImageButton
+                android:id="@+id/iv_del"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:src="@drawable/clear"
+                app:tint="#FF0080FF"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="父"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="母"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_ob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="兄"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_lb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="弟"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_os"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="姐"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_ls"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="妹"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_s"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="子"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:text="女"
+                android:textColor="#FF000000"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_each"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="互查"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_eq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:text="="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
